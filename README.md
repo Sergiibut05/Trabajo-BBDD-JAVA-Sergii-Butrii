@@ -40,4 +40,24 @@ git clone https://github.com/Sergiibut05/Trabajo-BBDD-JAVA-Sergii-Butrii.git
 ## 2. Diagrama Entidad-Relación de la BBDD
 ![Imagen del Proyecto](diagramaBBDD.png) 
 
+- La DataBase es responsable de administrar las reservas de pasajeros durante los vuelos. Cabe señalar que la tabla de reservas contiene dos Foreign Key, una para la id de vuelo y otra para la id de pasajeros. El sistema necesita que las reservas estén vinculadas tanto al vuelo como al pasajero que figura en las otras tablas. Al hacer una nueva reserva, es necesario asegurarse de que el vuelo y el pasajero estén registrados en la base de datos. La ausencia de cualquiera de estos lleva a un error y a la incapacidad de crear una reserva.
+
+## 3. Medidas tomadas
+El programa de  Java habilita la ejecución de múltiples operaciones en tablas de bases de datos.
+
+- **Crear**: permite insertar nuevos registros en cualquiera de las tres tablas que se ocupan de vuelos, pasajeros y reservas
+
+- **Modificar**: permite la modificación de los datos existentes en cualquier fila dentro de las tablas
+
+- **Eliminar**: autoriza la eliminación de registros particulares de las tablas según sea necesario.
+
+- **Ver todo**: Ver todas las filas en las tablas
+
+- **Buscar por ID**: Esta función permite buscar entradas particulares por su ID de identificador única dentro de cada tabla
+
+## 4. Conclusión
+- El Programa permite la gestión eficiente de reservas de vuelo mientras se mantiene íntegra a través de relaciones entre tablas.
+
+
+
 
