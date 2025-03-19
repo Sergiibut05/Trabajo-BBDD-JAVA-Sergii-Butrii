@@ -66,8 +66,8 @@ public class App {
         Scanner sc = new Scanner(System.in);
         // Configuración de la conexión a la base de datos
         String url = "jdbc:mysql://localhost:3306/aerolinea";
-        String usuario = "sergii";
-        String clave = "1234";
+        String usuario = "root";
+        String clave = "";
 
         ConnectionList pool = new ConnectionList(url, usuario, clave);
         PasajeroCRUD pservice = new PasajeroCRUD(pool.getConnection());
